@@ -1,6 +1,6 @@
 # Calculator Maven Project
 
-This is a simple calculator project built using **Java** and **Maven**. It provides basic arithmetic operations such as addition, subtraction, multiplication, and division.
+This is a simple calculator project built using Java and Maven. It provides basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
 ## Features
 
@@ -11,17 +11,42 @@ This is a simple calculator project built using **Java** and **Maven**. It provi
 
 ## Requirements
 
-- **Java 8 or higher** (for Java development)
-- **Maven 3.9.9 or higher** (for project build management)
+- Java 8 or higher (for Java development)
+- Maven 3.9.9 or higher (for project build management)
 
 ## Getting Started
 
 ### Prerequisites
 
-1. Install **Java** (JDK 8 or higher).
-2. Install **Maven** on your local machine. You can download it from [Apache Maven](https://maven.apache.org/).
+1. Install Java (JDK 8 or higher).
+2. Install Maven on your local machine. You can download it from [Apache Maven](https://maven.apache.org/).
 
 ### Clone the Repository
 
+To get started, clone the repository:
+
 ```bash
 git clone https://github.com/shivam-tayade/calculator-maven.git
+
+mvn clean install
+mvn exec:java
+
+Calculator calculator = new Calculator();
+System.out.println(calculator.add(5, 3));
+Result: 8
+
+# Jenkins Guide to Build Calculator Maven Project
+
+This guide explains how to set up Jenkins to build the **Calculator Maven Project**. Jenkins is an open-source automation server that helps automate tasks like building, testing, and deploying code.
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- **Jenkins** installed and running on your local machine or a server.
+- **Maven** installed on your system.
+- **Git** installed for cloning repositories.
+
+You should have also configured a **Jenkins**
+
+
