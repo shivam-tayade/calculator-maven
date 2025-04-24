@@ -48,7 +48,31 @@ Before you begin, ensure you have:
 - **Maven** installed on your system.
 - **Git** installed for cloning repositories.
 
-You should have also configured a **Jenkins**
+You should have also configured a **Jenkins job** for building your Maven project.
+
+## Steps to Set Up Jenkins Build for Calculator Project
+
+### 1. Clone the Repository to Jenkins Workspace
+
+- Open **Jenkins** and navigate to the **Jenkins Dashboard**.
+- Create a **new job** by clicking **"New Item"**.
+  - Select **"Freestyle Project"**.
+  - Give the project a name (e.g., `calculator-maven-build`), then click **OK**.
+  
+- In the **Job Configuration** page:
+  - Under **Source Code Management**, choose **Git**.
+  - Enter the **Repository URL**:  
+    `https://github.com/shivam-tayade/calculator-maven.git`
+  - Add your **credentials** if required (e.g., GitHub token or SSH keys).
+  - Specify the branch to build (default is **master** or **main**).
+
+### 2. Configure Maven Build Steps
+
+- Scroll to the **Build** section.
+- Click **Add Build Step** and choose **Invoke top-level Maven targets**.
+- In **Goals**, enter:
+  ```bash
+  clean install
 
 
 ### Key Sections:
@@ -58,6 +82,7 @@ You should have also configured a **Jenkins**
 - **Troubleshooting**: Provides tips for common issues.
 
 This guide should give you a full setup for using **Jenkins** to build your **Calculator Maven Project**. Let me know if you need more adjustments or additional help!
+
 
 
 
