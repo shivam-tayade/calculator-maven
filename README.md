@@ -29,11 +29,12 @@ To get started, clone the repository:
 git clone https://github.com/shivam-tayade/calculator-maven.git
 
 mvn clean install
-mvn exec:java
+mvn exec:java 
 
 Calculator calculator = new Calculator();
 System.out.println(calculator.add(5, 3));
 Result: 8
+```
 
 # Jenkins Guide to Build Calculator Maven Project
 
@@ -48,5 +49,15 @@ Before you begin, ensure you have:
 - **Git** installed for cloning repositories.
 
 You should have also configured a **Jenkins**
+
+
+### Key Sections:
+- **Cloning the Repository**: Shows how to link the GitHub repository with Jenkins.
+- **Building the Project**: Explains how to configure Jenkins to run Maven commands.
+- **Post-build Actions**: Outlines how to set up additional steps after the build.
+- **Troubleshooting**: Provides tips for common issues.
+
+This guide should give you a full setup for using **Jenkins** to build your **Calculator Maven Project**. Let me know if you need more adjustments or additional help!
+
 
 
