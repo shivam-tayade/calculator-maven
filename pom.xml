@@ -40,6 +40,23 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+            
+            <!-- Add the exec-maven-plugin to specify the main class -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>com.example.Calculator</mainClass> <!-- Specify your main class here -->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>
